@@ -1,0 +1,54 @@
+RewriteEngine On
+RewriteBase /home.html
+RewriteCond %{REQUEST_FILENAME} !-f [OR] !-d
+RewriteCond %{REQUEST_FILENAME} !-s
+RewriteRule ^register$ /register.php [L]
+RewriteRule ^indexplayer$ /indexplayer.php [L]
+RewriteRule ^login$ /login.php [L]
+RewriteRule ^password-reset$ /password-reset.php [L]
+RewriteRule ^user$ /user.php [L]
+RewriteRule ^rename$ /rename.php [L]
+RewriteRule ^lich-su-nap-the$ /lich-su-nap-the.php [L]
+RewriteRule ^update-info$ /update_info.php [L]
+RewriteRule ^change-password$ /change-password.php [L]
+RewriteRule ^topup$ /topup.php [L]
+RewriteRule ^store-online$ /webshop.php [L]
+RewriteRule ^new-item$ /new_item.php [L]
+RewriteRule ^store-manager$ /webshop_manager.php [L]
+RewriteRule ^exchange$ /exchange.php [L]
+RewriteRule ^post$ /post.php [L]
+RewriteRule ^active$ /active.php [L]
+RewriteRule ^tai-ve$ /tai-ve.php [L]
+RewriteRule ^lich-su$ /lich-su.php [L]
+RewriteRule ^manager$ /admin.php [L]
+RewriteRule ^check-lich-su$ /checklichsu.php [L]
+RewriteRule ^chuc-nang$ /chucnang.php [L]
+RewriteRule ^vongquay$ /vongquay.php [L]
+ErrorDocument 404 /404.php
+RewriteRule change-sdt$ /change-sdt.php [L]
+php_value upload_max_filesize 150M
+php_value post_max_size 150M
+
+<Files connect_cpanel.php>
+order deny,allow
+deny from all
+</Files>
+<Files block_ip.php>
+order deny,allow
+deny from all
+</Files>
+<Files cauhinh.php>
+order deny,allow
+deny from all
+</Files>
+<Files connect_post.php>
+order deny,allow
+deny from all
+</Files>
+
+
+
+
+
+
+
